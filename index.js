@@ -28,7 +28,7 @@ function displayMessage() {
 
 async function updateHighscore(newHighscore) {
     try {
-        const response = await fetch('/highscore', {
+        const response = await fetch('https://rohit-deka-rhd-e435a3203b63.herokuapp.com/', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
