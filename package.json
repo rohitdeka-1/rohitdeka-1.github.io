@@ -1,0 +1,15 @@
+{
+  "name": "click-counter-game",
+  "version": "1.0.0",
+  "description": "Click counter game with highscore tracking",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "lowdb": "^3.0.0"
+  },
+  "author": "rohitdeka-1",
+  "license": "ISC"
+}
