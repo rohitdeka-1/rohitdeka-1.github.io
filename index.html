@@ -40,7 +40,7 @@
             margin-top: 30px;
         }
         button {
-            background: linear-gradient(90deg, #f6d365, #fda085);
+            background: linear-gradient(90deg, #c9c8c8, #a09f9e);
             color: #fff;
             border: none;
             padding: 15px 30px;
@@ -75,9 +75,12 @@
     </div>
 
     <script>
+        var count = 0;
         function displayMessage() {
             const message = document.getElementById('message');
-            message.textContent = "Happy Birthday ";
+            message.textContent = "Clicks : "+count;
+            count += 1;
+            console.log(count);
         }
     </script>
 </body>
