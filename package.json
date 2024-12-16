@@ -1,15 +1,23 @@
 {
-  "name": "click-counter-game",
+  "name": "portfolio",
   "version": "1.0.0",
-  "description": "Click counter game with highscore tracking",
+  "description": "Game click counter with highscore backend",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "dependencies": {
-    "express": "^4.21.2",
-    "lowdb": "^3.0.0"
+    "express": "^4.17.1",
+    "cors": "^2.8.5",
+    "fs-extra": "^10.0.0" 
   },
-  "author": "rohitdeka-1",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "engines": {
+    "node": "14.x"
+  },
+  "author": "",
   "license": "ISC"
 }

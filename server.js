@@ -1,38 +1,53 @@
 const express = require('express');
-const { Low, JSONFile } = require('lowdb');
+const fs = require('fs');
 const path = require('path');
-
+const cors = require('cors');
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5000;
 
-// Initialize the database
-const db = new Low(new JSONFile('db.json'));
-db.data = { highestScore: 0 };
+app.use(cors()); 
+app.use(express.json()); 
 
-// Serve the frontend files
-app.use(express.static(path.join(__dirname, 'public')));
-app.use(express.json());
+const dbPath = path.join(__dirname, 'db.json');
 
-// Get the highest score
-app.get('/highscore', async (req, res) => {
-    await db.read();
-    res.json({ highestScore: db.data.highestScore });
+const getHighscore = () => {
+    try {
+        const data = fs.readFileSync(dbPath, 'utf8');
+        const parsedData = JSON.parse(data);
+        return parsedData.highscore;
+    } catch (err) {
+        console.error('Error reading highscore:', err);
+        return 0; 
+    }
+};
+
+
+const updateHighscore = (newHighscore) => {
+    const data = JSON.stringify({ highscore: newHighscore }, null, 2);
+    fs.writeFileSync(dbPath, data, 'utf8');
+};
+
+
+app.get('/highscore', (req, res) => {
+    const highscore = getHighscore();
+    res.json({ highscore });
 });
 
-// Submit a new score
-app.post('/highscore', async (req, res) => {
-    const { score } = req.body;
-    await db.read();
-    if (score > db.data.highestScore) {
-        db.data.highestScore = score;
-        await db.write();
-        res.json({ message: 'New highest score!', highestScore: db.data.highestScore });
+
+app.post('/highscore', (req, res) => {
+    const { highscore: newHighscore } = req.body;
+
+    if (newHighscore > getHighscore()) {
+        updateHighscore(newHighscore);
+        res.json({ message: 'Highscore updated', highscore: newHighscore });
     } else {
-        res.json({ message: 'Score did not beat the highest score', highestScore: db.data.highestScore });
+        res.json({ message: 'Highscore not updated', highscore: getHighscore() });
     }
 });
 
-// Start the server
+
+app.use(express.static(path.join(__dirname, 'public')));
+
 app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);
 });
