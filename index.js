@@ -1,3 +1,5 @@
+alert("Site is under construction , press OK!")
+
 function toggleMenu() {
     const menuLinks = document.querySelector('.menu-link');
     menuLinks.classList.toggle('active');
