@@ -1,4 +1,4 @@
-alert("Site is under construction , press OK!")
+alert("Site is under construction , press OK! \n from ROHIT :) ")
 
 function toggleMenu() {
     const menuLinks = document.querySelector('.menu-link');
