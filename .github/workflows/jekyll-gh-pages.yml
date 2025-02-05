@@ -1,4 +1,3 @@
-# Sample workflow for building and deploying a Jekyll site to GitHub Pages
 name: Deploy Jekyll with GitHub Pages dependencies preinstalled
 
 on:
@@ -37,30 +36,6 @@ jobs:
           destination: ./_site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
-            - name: Setup Node.js environment
-  uses: actions/setup-node@v4.2.0
-  with:
-    # Set always-auth in npmrc.
-    always-auth: # optional, default is false
-    # Version Spec of the version to use. Examples: 12.x, 10.15.1, >=10.15.0.
-    node-version: # optional
-    # File containing the version Spec of the version to use.  Examples: package.json, .nvmrc, .node-version, .tool-versions.
-    node-version-file: # optional
-    # Target architecture for Node to use. Examples: x86, x64. Will use system architecture by default.
-    architecture: # optional
-    # Set this option if you want the action to check for the latest available version that satisfies the version spec.
-    check-latest: # optional
-    # Optional registry to set up for auth. Will set the registry in a project level .npmrc and .yarnrc file, and set up auth to read in from env.NODE_AUTH_TOKEN.
-    registry-url: # optional
-    # Optional scope for authenticating against scoped registries. Will fall back to the repository owner when using the GitHub Packages registry (https://npm.pkg.github.com/).
-    scope: # optional
-    # Used to pull node distributions from node-versions. Since there's a default, this is typically not supplied by the user. When running this action on github.com, the default value is sufficient. When running on GHES, you can pass a personal access token for github.com if you are experiencing rate limiting.
-    token: # optional, default is ${{ github.server_url == 'https://github.com' && github.token || '' }}
-    # Used to specify a package manager for caching in the default directory. Supported values: npm, yarn, pnpm.
-    cache: # optional
-    # Used to specify the path to a dependency file: package-lock.json, yarn.lock, etc. Supports wildcards or a list of file names for caching multiple dependencies.
-    cache-dependency-path: # optional
-          
 
   # Deployment job
   deploy:
@@ -73,3 +48,34 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      # Add Node.js setup here for React/Vite build
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v4.2.0
+        with:
+          node-version: '16.x'  # Specify the Node.js version
+          # Optional configurations below:
+          always-auth: false
+          # architecture: 'x64'   # Optional, specify architecture
+          # check-latest: true    # Optional, check for the latest version
+          # cache: 'npm'          # Optional, specify package manager for caching
+          # cache-dependency-path: 'package-lock.json' # Optional for caching specific files
+
+      # Install dependencies for your React/Vite app
+      - name: Install dependencies
+        run: |
+          npm install
+
+      # Build the React app (Vite build)
+      - name: Build React App
+        run: |
+          npm run build
+
+      # Deploy React App to GitHub Pages
+      - name: Deploy React App to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages  # The branch where the build will be pushed
+          folder: dist      # The folder to deploy (Vite's build output folder)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # GitHub token for authentication
