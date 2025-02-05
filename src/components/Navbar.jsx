@@ -1,7 +1,6 @@
-
 const Navbar = () => {
   return (
-    <div>
+    <div className="fixed top-0 left-0 w-full z-10">
       <div className="navbar font-poppins h-[70px] bg-black rounded-b-2xl px-16 flex shadow-xl">
         <div className="navbar-start">
           <div className="dropdown">
@@ -25,38 +24,26 @@ const Navbar = () => {
               tabIndex={0}
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
-              <li>
-                <a>Item 1</a>
-              </li>
-              <li>
-                <a>Item 3</a>
-              </li>
-              <li>
-                <a>Item 3</a>
-              </li>
+              <li><a>Item 1</a></li>
+              <li><a>Item 2</a></li>
+              <li><a>Item 3</a></li>
             </ul>
           </div>
           <a className="btn btn-ghost text-2xl">Rohit Deka</a>
         </div>
 
         <div className="navbar-end">
-          <div className=" hidden lg:flex">
+          <div className="hidden lg:flex">
             <ul className="menu menu-horizontal px-1 text-xl font-bold">
-              <li>
-                <a>About</a>
-              </li>
-              <li>
-                <a>Projects</a>
-              </li>
-              <li>
-                <a>Contact me</a>
-              </li>
+              <li><a>About</a></li>
+              <li><a>Projects</a></li>
+              <li><a>Contact Me</a></li>
             </ul>
           </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

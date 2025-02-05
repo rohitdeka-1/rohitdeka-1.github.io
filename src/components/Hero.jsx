@@ -21,12 +21,12 @@ const Hero = () => {
           </button>
         </div>
         <div className="text-3xl flex gap-5 px-10">
-          <i class="fa-brands fa-linkedin"><a></a></i>
-          <i class="fa-brands fa-square-github"></i>
+          <a href="https://linkedin.com/in/rohitdekarhd" target="_blank_"><i className="fa-brands fa-linkedin cursor-pointer"></i></a>
+          <a href="https://github.com/rohitdeka-1" target="_blank_"><i className="fa-brands fa-square-github cursor-pointer"></i></a>
         </div>
       </div>
       <div className="w-full sm:w-[50%] h-full flex items-center justify-center mt-8 sm:mt-0">
-        <div className="card bg-[#1dba9b] border-2 border-black sm:h-[400px] md:h-[550px] w-full sm:w-[450px] max-w-[90%] shadow-div text rounded-2xl ">
+        <div className="card bg-[#1111] border-2  border-black sm:h-[400px] md:h-[550px] w-full sm:w-[450px] max-w-[90%] shadow-div text rounded-2xl ">
           <img
             src="/Assets/myPhoto.jpg"
             alt="Rohit Deka"
