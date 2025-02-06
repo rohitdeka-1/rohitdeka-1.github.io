@@ -6,8 +6,9 @@
 @tailwind utilities;
 
 
-body{
+body,html{
     scroll-behavior: smooth;
+    user-select: none;
 }
 
 .hello{
@@ -17,8 +18,19 @@ body{
 p{
     margin: 0;
     padding: 0;
-}
 
-/* .para{
-    line-height: clamp(20px, 5vw, 80px);
-} */
+}@keyframes hov {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(50px);
+    }
+    100% {
+      transform: translateY(50px); 
+    }
+  }
+  
+  .group:hover .pro-card {
+    animation: hov 0.6s ease-in-out forwards; 
+  }

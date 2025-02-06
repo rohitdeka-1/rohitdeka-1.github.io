@@ -13,6 +13,7 @@ export default {
       boxShadow: {
         'div': '10px 10px 0px rgba(0, 0, 0, 1)',
         'btn': '5px 5px 0px #ef5ff1c1',
+        'btn2': '0px 5px 0px #ffffff',
       },
     },
   },

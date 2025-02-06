@@ -1,7 +1,7 @@
 const About = () => {
   return (
-    <div className="h-full w-full flex justify-center items-center p-4 sm:p-8">
-      <div className="w-full max-w-6xl bg-blue-600 flex flex-col lg:flex-row justify-center items-center rounded-3xl p-4 sm:p-8">
+    <div className="h-full w-full flex justify-center items-center p-4 sm:p-8 " >
+      <div className="w-full max-w-6xl bg-blue-600 flex flex-col lg:flex-row justify-center items-center rounded-3xl p-4 sm:p-8" >
         <div className="w-full lg:w-1/2 flex justify-center items-center mb-8 lg:mb-0">
           <div className="card border-2 border-black w-full max-w-[360px] aspect-square rounded-2xl shadow-div overflow-hidden">
             <img src="/Assets/myPhoto.jpg" alt="Rohit Deka" className="w-full h-full object-cover" />
