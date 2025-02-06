@@ -12,7 +12,7 @@ const About = () => {
           <h1 className="text-white font-bold text-4xl sm:text-5xl mb-4 lg:mb-8 leading-[1rem]">About me</h1>
           <p className="text-xl  text-gray  ">Full Stack Developer</p>
           <div className="flex flex-col gap-4 ">
-            <p className="text-[#f0ecec] font-semibold  text-base sm:text-lg">
+            <p className="text-[#f0ecec] font-poppins  text-base sm:text-lg">
               Hi, I'm Rohit Deka, a passionate Full Stack Developer with a strong foundation in React, Node.js, and
               Express. Currently pursuing an Integrated M.Tech in CSE AI Specialization at VIT Bhopal, I love building
               dynamic web applications and exploring new technologies. When I'm not coding, you'll find me playing
