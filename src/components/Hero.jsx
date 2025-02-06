@@ -28,7 +28,7 @@ const Hero = () => {
       <div className="w-full sm:w-[50%] h-full flex items-center justify-center mt-8 sm:mt-0">
         <div className="card bg-[#1111] border-2  border-black sm:h-[400px] md:h-[550px] w-full sm:w-[450px] max-w-[90%] shadow-div text rounded-2xl ">
           <img
-            src="/Assets/myPhoto.jpg"
+            src="public/Assets/myPhoto.jpg"
             alt="Rohit Deka"
             className="h-full rounded-3xl p-2"
           />
