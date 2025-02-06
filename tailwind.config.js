@@ -17,4 +17,5 @@ export default {
     },
   },
   plugins: [daisyui],
+  base: "/rohitdeka-1.github.io"
 };
