@@ -15,12 +15,12 @@ const About = () => {
             </div>
           </div>
 
-          <div className="font-poppins w-[50%] h-full flex flex-col items-center justify-center py-7">
+          <div className="font-poppins w-[50%] h-[80%] flex flex-col items-center justify-center py-16">
             <h1 className="w-full h-[20%] flex justify-left items-center text-white font-bold text-[59.0px]">
               About me
             </h1>
-            <p className="w-full h-[80%] flex flex-col gap-5">
-              <h1 className="text-xl leading-3">Full Stack Developer</h1>
+            <div className="w-full h-[80%] flex flex-col gap-5">
+              <p className="text-xl leading-3">Full Stack Developer</p>
               <p className="py-4 mr-10 text-[#f0ecec] font-semibold text-[17.61px] justify-center">
                 Hi I'm Rohit Deka a passionate Full Stack Developer with a
                 strong foundation in React Node.js and Express Currently
@@ -36,7 +36,7 @@ const About = () => {
                   Connect
                 </a>
               </button>
-            </p>
+            </div>
           </div>
         </div>
     
