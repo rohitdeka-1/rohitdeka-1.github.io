@@ -5,7 +5,7 @@ import Projects from "./components/Projects"
 
 function App() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen" id="home">
       <Navbar />
       <section className="flex-grow bg-[#20a3cf]">
         <Hero />

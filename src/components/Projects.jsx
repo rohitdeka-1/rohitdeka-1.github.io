@@ -16,10 +16,10 @@ const Projects = () => {
             img="/Assets/image999.png"
             name="WeatherAPP"
           />
-          <Procard img="/Assets/image.png" name="Project 3" />
-          <Procard img="/Assets/image.png" name="Project 4" />
-          <Procard img="/Assets/image.png" name="Project 5" />
-          <Procard img="/Assets/image.png" name="Project 6" />
+          <Procard link="https://rhd-temp.vercel.app" img="/public/Assets/Gpt-chat.png" name="ChatBot(API)" />
+          <Procard link="https://react-todo-list-3lhk.vercel.app/" img="/Assets/TodoList.png" name="Project 4" />
+          <Procard link="https://www.rohitdeka.me" img="/Assets/Porfolio.png" name="Project 5" />
+          
         </div>
       </div>
     </>

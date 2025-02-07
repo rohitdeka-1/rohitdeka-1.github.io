@@ -9,7 +9,7 @@ const Navbar = () => {
     <div className="fixed top-0 left-0 right-0 z-50 px-4 sm:px-8">
       <div className="navbar font-poppins h-[70px] bg-black rounded-b-2xl shadow-xl">
         <div className="flex-1">
-          <a className="btn btn-ghost text-xl sm:text-2xl text-white">Rohit Deka</a>
+          <a className="btn btn-ghost text-xl sm:text-2xl text-white" href="#home">Rohit Deka</a>
         </div>
         <div className="flex-none">
           <div className="dropdown dropdown-end">
