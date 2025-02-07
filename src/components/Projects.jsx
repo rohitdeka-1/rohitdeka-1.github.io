@@ -16,7 +16,7 @@ const Projects = () => {
             name="WeatherAPP"
           />
           <Procard
-            link="https://rhd-temp.vercel.app"
+            link="https://deka-gpt.vercel.app"
             img="/Assets/Gpt-chat.png"
             name="ChatBot(API)"
           />
