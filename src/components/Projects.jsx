@@ -13,7 +13,7 @@ const Projects = () => {
           <Procard
             link="https://rhd-temp.vercel.app/"
             img="/Assets/image999.png"
-            name="WeatherAPP"
+            name="WeatherApp"
           />
           <Procard
             link="https://deka-gpt.vercel.app"
