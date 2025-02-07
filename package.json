@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "homepage": "rohitdeka.me",
+  "homepage": "http://rohitdeka.me",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,11 +10,12 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy":"gh-pages -d dist"
-
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "express": "^4.21.2",
     "gh-pages": "^6.3.0",
+    "nodemon": "^3.1.9",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
@@ -33,5 +34,9 @@
     "postcss": "^8.5.1",
     "tailwindcss": "^3.4.17",
     "vite": "^6.1.0"
-  }
+  },
+  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
+  "main": "eslint.config.js",
+  "author": "@rohitdeka-1",
+  "license": "ISC"
 }
