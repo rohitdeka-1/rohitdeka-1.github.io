@@ -13,7 +13,7 @@ function App() {
       <section className="min-h-screen bg-[#FADA5E] flex justify-center items-center" id="about">
         <About />
       </section>
-      <section className="min-h-screen bg-[#1846eda4] flex justify-center p-2 items-start" id="projects">
+      <section className="min-h-screen bg-[#1846eda4] flex justify-center p-2 py-5 items-start" id="projects">
         <Projects/>
       </section>
     </div>
