@@ -23,7 +23,7 @@ const About = () => {
               href="https://linkedin.com/in/rohitdekarhd"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-black font-bold rounded shadow-btn text-center py-2 px-5 text-lg sm:text-xl text-white transition-all duration-500 ease-in-out hover:bg-white hover:text-black border border-transparent hover:border-black mt-4"
+              className="inline-block bg-black font-bold rounded shadow-btn text-center py-2 px-5 text-lg sm:text-xl text-white transition-all duration-100 ease-in-out hover:bg-white hover:text-black border border-transparent hover:border-black mt-4"
             >
               Connect
             </a>

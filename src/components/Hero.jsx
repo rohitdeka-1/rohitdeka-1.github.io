@@ -18,10 +18,10 @@ const Hero = () => {
         </div>
 
         <div className="flex flex-wrap justify-center lg:justify-start gap-4 mb-6">
-          <button className="bg-black rounded shadow-btn py-2 px-5 text-lg sm:text-xl text-white transition-all duration-500 ease-in-out hover:bg-white hover:text-black border border-transparent hover:border-black">
+          <button className="bg-black rounded shadow-btn py-2 px-5 text-lg sm:text-xl text-white transition-all duration-100 ease-in-out hover:bg-white hover:text-black border border-transparent hover:border-black">
             Contact Me
           </button>
-          <button className="bg-black rounded shadow-btn py-2 px-5 text-lg sm:text-xl text-white transition-all duration-500 ease-in-out hover:bg-white hover:text-black border border-transparent hover:border-black">
+          <button className="bg-black rounded shadow-btn py-2 px-5 text-lg sm:text-xl text-white transition-all duration-100 ease-in-out hover:bg-white hover:text-black border border-transparent hover:border-black">
             Hire Me
           </button>
         </div>

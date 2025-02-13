@@ -20,12 +20,18 @@ const Projects = () => {
             img="/Assets/Gpt-chat.png"
             name="ChatBot(API)"
           />
+
           <Procard
             link="https://react-todo-list-3lhk.vercel.app/"
             img="/Assets/TodoList.png"
             name="TodoList"
           />
 
+          <Procard
+            link="https://chat-app-seven-dun.vercel.app/"
+            img="/Assets/ChatApp.png"
+            name="ChatApp"
+          />
         </div>
       </div>
     </>
