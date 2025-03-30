@@ -9,6 +9,7 @@ export default {
       fontFamily: {
         nunito: ['Nunito', 'sans-serif'],
         poppins: ['Poppins', 'sans-serif'],
+        geist: ["Geist", "sans-serif"],
       },
       boxShadow: {
         'div': '10px 10px 0px rgba(0, 0, 0, 1)',

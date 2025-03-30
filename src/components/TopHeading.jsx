@@ -17,7 +17,7 @@ const TopHeading = () => {
   return (
     <div className="mt-8 w-full flex flex-row justify-center items-center lg:max-w-5xl xl:max-w-6xl 2xl:max-w-3xl mx-auto   ">
       <div className="max-w-xs md:max-w-md lg:max-w-lg">
-        <h1 className="mt-5 font-poppins font-semibold text-3xl text-white">
+        <h1 className="mt-5 font-geist  font-bold text-3xl 2xl:text-4xl text-white">
           Hi, I'm Rohit ⚡
         </h1>
         <p className="mt-5 text-gray-300">Developer</p>
