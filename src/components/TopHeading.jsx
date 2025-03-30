@@ -15,7 +15,7 @@ const TopHeading = () => {
   }, []);
 
   return (
-    <div className="mt-8 w-full flex flex-row justify-around items-center lg:max-w-2xl lg:scale-75 xl:max-w-6xl 2xl:max-w-7xl mx-auto  ">
+    <div className="mt-8 w-full flex flex-row justify-center items-center lg:max-w-5xl xl:max-w-6xl 2xl:max-w-3xl mx-auto   ">
       <div className="max-w-xs md:max-w-md lg:max-w-lg">
         <h1 className="mt-5 font-poppins font-semibold text-3xl text-white">
           Hi, I'm Rohit ⚡
@@ -50,9 +50,9 @@ const TopHeading = () => {
       </div>
 
       {/* Right Section (GIF) */}
-      <div className="flex justify-center items-center w-1/2">
+      <div className="flex justify-end items-center w-1/2">
         <img
-          className=" w-28 sm:w-28 md:w-28 lg:w-32 xl:w-32 2xl:w-16 rounded-3xl"
+          className=" w-28 sm:w-28 md:w-28 lg:w-32 xl:w-38 2xl:w-29 rounded-3xl"
           src="/Assets/omen-img.jpg"
           alt="Omen GIF"
         />
