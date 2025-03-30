@@ -53,7 +53,7 @@ const TopHeading = () => {
         </div>
       </div>
 
-      {/* Right Section (GIF) */}
+ 
 
       <motion.div
         className="flex justify-end items-center w-1/2"
