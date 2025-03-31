@@ -79,7 +79,7 @@ const Cursor = () => {
         transition={{
           type: "tween",
           ease: "easeOut",
-          duration: 0.05, // Smoother but fast
+          duration: 0.05,
         }}
       />
       <style>{`body { cursor: none; }`}</style>

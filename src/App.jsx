@@ -5,6 +5,7 @@ import { motion } from "motion/react";
 import Cursor from "./components/subcomponents/Cursor";
 import TechStack from "./components/TechStack";
 import BlurEffect from "./components/subcomponents/BlurEffect";
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <TopHeading />
           <About />
           <TechStack />
+          <NavBar/>
         </div>
       </div>
     </BlurEffect>
