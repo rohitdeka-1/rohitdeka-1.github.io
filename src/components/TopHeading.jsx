@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import ShowCard from "./subcomponents/ShowCard";
 import { motion } from "motion/react";
 
-const TopHeading = () => {
+const TopHeading = ({target}) => {
   const [currentTime, setCurrentTime] = useState(
     new Date().toLocaleTimeString()
   );
@@ -16,7 +16,7 @@ const TopHeading = () => {
   }, []);
 
   return (
-    <div className="mt-8 w-full flex flex-row justify-between items-center lg:max-w-5xl xl:max-w-6xl 2xl:max-w-3xl mx-auto   ">
+    <div id="home" className="mt-8 w-full flex flex-row justify-between items-center lg:max-w-5xl xl:max-w-6xl 2xl:max-w-3xl mx-auto   ">
       <div className="max-w-xs md:max-w-md lg:max-w-lg">
         <h1 className="mt-5 font-geist  font-bold text-3xl 2xl:text-4xl text-white">
           Hi, I'm Rohit ⚡

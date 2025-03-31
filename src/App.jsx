@@ -6,6 +6,7 @@ import BlurEffect from "./components/subcomponents/BlurEffect";
 import NavBar from "./components/NavBar";
 import ShowCase from "./components/ShowCase";
 import Background from "./components/subcomponents/Background";
+import Projects from "./components/Projects";
 
 function App() {
   return (
@@ -14,8 +15,8 @@ function App() {
         <Background/>
         <div className=" p-3 bg-black w-full text-justify flex flex-col items-center">
           <div className="w-full lg:max-w-5xl xl:max-w-6xl 2xl:max-w-3xl mx-auto px-4">
-            <TopHeading />
-            <About />
+            <TopHeading target="home"  />
+            <About target="about" />
             <TechStack />
           </div>
         </div>
@@ -23,6 +24,7 @@ function App() {
         <div className="min-h-screen w-full bg-black flex flex-col items-center">
           <div className="w-full lg:max-w-5xl xl:max-w-6xl 2xl:max-w-3xl mx-auto px-4">
             <ShowCase/>
+            <Projects/>
           </div>
         </div>
       </BlurEffect>

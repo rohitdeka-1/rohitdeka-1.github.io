@@ -22,13 +22,14 @@ const cardData3 = [
   { text: "Redux", icon: <GitBranch className="w-6 h-6 ml-2 text-purple-400" /> },
   { text: "GraphQL", icon: <Cloud className="w-6 h-6 ml-2 text-red-400" /> },
   { text: "Firebase", icon: <Rocket className="w-6 h-6 ml-2 text-orange-400" /> },
+  { text: "SQL", icon: <Database className="w-6 h-6 ml-2 text-red-400" /> }
 ]
 
 
 const Card = memo(({ text, icon, index }) => (
   <div
     key={index}
-    className="w-[160px] h-[60px] bg-gray-800 text-white flex items-center justify-center rounded-3xl shadow-lg flex-shrink-0 px-4"
+    className="w-[160px] h-[60px] bg-gray-800 border border-[rgba(145,145,145,0.43)] text-white flex items-center justify-center rounded-3xl shadow-lg flex-shrink-0 px-4"
     style={{
       willChange: "transform",
       backfaceVisibility: "hidden",

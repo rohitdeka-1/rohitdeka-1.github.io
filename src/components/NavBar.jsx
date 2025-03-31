@@ -1,13 +1,17 @@
 import { useState, useEffect } from "react";
 import { Home, User, Folder, Mail } from "lucide-react";
 
-const NavItem = ({ icon }) => {
+const NavItem = ({ icon, target }) => {
   return (
-    <button className="flex flex-col items-center justify-center p-2 hover:text-blue-400 transition-all hover:scale-110">
+    <button 
+      onClick={() => document.getElementById(target)?.scrollIntoView({ behavior: "smooth" })} 
+      className="flex flex-col items-center justify-center p-2 hover:text-blue-400 transition-all hover:scale-110"
+    >
       {icon}
     </button>
   );
 };
+
 
 const NavBar = () => {
   const [showNav, setShowNav] = useState(true);
@@ -30,11 +34,11 @@ const NavBar = () => {
         showNav ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"
       } pointer-events-none`}
     >
-      <div className="flex items-center justify-around w-64 md:w-80 lg:w-96 lg:px-10 xl:w-[29rem] 2xl:w-[30rem] h-14 2xl:h-15 backdrop-blur-md text-white rounded-full shadow-lg border border-gray-700 pointer-events-auto">
-        <NavItem icon={<Home size={24} />} />
-        <NavItem icon={<User size={24} />} />
-        <NavItem icon={<Folder size={24} />} />
-        <NavItem icon={<Mail size={24} />} />
+      <div className="flex items-center justify-around w-64 md:w-80 lg:w-96 lg:px-10 xl:w-[29rem] 2xl:w-[30rem] h-14 2xl:h-15 backdrop-blur-md text-white rounded-full shadow-lg border border-[#5aff3938] pointer-events-auto">
+      <NavItem target="home" icon={<Home size={24} />} />
+        <NavItem target="about" icon={<User size={24} />} />
+        <NavItem target="projects" icon={<Folder size={24} />} />
+        <NavItem target="contact" icon={<Mail size={24} />} />
       </div>
     </div>
   );

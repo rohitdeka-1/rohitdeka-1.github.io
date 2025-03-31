@@ -1,8 +1,8 @@
 import React from "react";
 
-const About = () => {
+const About = ({target}) => {
   return (
-    <div className="mt-10 w-full">
+    <div id={target} className="mt-10 w-full">
       <h1 className="text-white font-geist text-2xl font-bold">About</h1>
       <p className="mt-3 text-gray-300 font-poppins text-md">
         I am Rohit Deka, a passionate full-stack developer focusing on Reactjs
