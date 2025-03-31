@@ -63,7 +63,7 @@ const Cursor = () => {
       borderRadius: "50%",
       backgroundColor: cursorColor,
       scale: 1.5,
-      opacity: isVisible ? 1 : 0,
+      opacity: isVisible ? 1 : 0.09,
     },
   };
 

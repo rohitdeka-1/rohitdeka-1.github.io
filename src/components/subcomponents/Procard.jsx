@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import ShowCard from "./ShowCard";
 
 const Procard = ({ link, img, name, description, tags }) => {
+
   return (
     <motion.a
       href={link}
@@ -31,6 +32,7 @@ const Procard = ({ link, img, name, description, tags }) => {
         </div>
       </div>
     </motion.a>
+    
   );
 };
 

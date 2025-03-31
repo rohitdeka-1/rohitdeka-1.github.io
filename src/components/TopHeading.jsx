@@ -52,9 +52,7 @@ const TopHeading = ({target}) => {
           />
         </div>
       </div>
-
  
-
       <motion.div
         className="flex justify-end items-center w-1/2"
         initial={{ scale: 0 }}

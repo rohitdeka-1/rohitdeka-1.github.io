@@ -17,10 +17,10 @@ const fadeInVariants = {
   },
 };
 
-const Projects = () => {
+const Projects = ({target}) => {
   return (
     <>
-      <h1 className="text-white font-geist text-2xl mt-3 font-bold">Projects</h1>
+      <h1 id={target} className="text-white font-geist text-2xl mt-3 font-bold">Projects</h1>
       <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4 p-3 w-full max-w-screen-xl mx-auto">
         <motion.div
           variants={fadeInVariants}
