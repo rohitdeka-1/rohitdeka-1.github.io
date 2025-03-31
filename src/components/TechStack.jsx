@@ -1,12 +1,12 @@
 import { useRef, useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { Code, Server, Database, Rocket, Layers, Cloud, GitBranch, Zap } from "lucide-react"; // Icons
+import { Code,Code2,Braces, Server, Database, Rocket, Layers, Cloud, GitBranch, Zap } from "lucide-react"; // Icons
 
 const cardData1 = [
   { text: "React.js", icon: <Code className="w-6 h-6 ml-2 text-blue-400" /> },
   { text: "Node.js", icon: <Server className="w-6 h-6 ml-2 text-green-500" /> },
   { text: "TailwindCSS", icon: <Rocket className="w-6 h-6 ml-2 text-cyan-400" /> },
-  { text: "JavaScript", icon: <Database className="w-6 h-6 ml-2 text-yellow-400" /> },
+  { text: "JavaScript", icon: <Braces className="w-6 h-6 text-yellow-400" />},
 ];
 
 const cardData2 = [
@@ -72,11 +72,11 @@ const InfiniteMarquee = ({ cards, speed, direction }) => {
 const TechStack = () => {
   return (
     <div className="relative w-full flex flex-col items-center space-y-2 bg-black py-4">
-      {/* Vignette Edge Effects */}
+ 
       <div className="absolute top-0 left-0 w-32 h-full bg-gradient-to-r from-black to-transparent z-10"></div>
       <div className="absolute top-0 right-0 w-32 h-full bg-gradient-to-l from-black to-transparent z-10"></div>
 
-      <InfiniteMarquee cards={cardData1} speed={13} direction="right" />
+      <InfiniteMarquee cards={cardData1} speed={14} direction="right" />
       <InfiniteMarquee cards={cardData2} speed={15} direction="left" />
       <InfiniteMarquee cards={cardData3} speed={10} direction="right" />
     </div>
