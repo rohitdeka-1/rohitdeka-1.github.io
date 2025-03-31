@@ -1,24 +1,25 @@
-import React from "react";
-import { Home, User, Folder, Mail } from "lucide-react";
+import { Home, User, Folder, Mail } from "lucide-react"
+
+const NavItem = ({ icon }) => {
+  return (
+    <button className="flex flex-col items-center justify-center p-2 hover:text-blue-400 transition-all hover:scale-110">
+      {icon}
+    </button>
+  )
+}
 
 const NavBar = () => {
   return (
-    <div className="fixed bottom-4 2xl:bottom-9 py-6 px-6 left-1/2 transform -translate-x-1/2 text-white flex items-center justify-around w-64 h-12 rounded-full shadow-lg z-50 border border-gray-700">
-      <NavItem icon={<Home size={20} />} label="Home" />
-      <NavItem icon={<User size={20} />} label="About" />
-      <NavItem icon={<Folder size={20} />} label="Projects" />
-      <NavItem icon={<Mail size={20} />} label="Connect" />
+    <div className="fixed inset-x-0 bottom-4 flex justify-center z-[9999] pointer-events-none">
+      <div className="flex items-center justify-around w-64 h-14 2xl:w-100 bg-gray-900/90 backdrop-blur-md text-white rounded-full shadow-lg border border-gray-700 pointer-events-auto">
+        <NavItem icon={<Home size={22} />} />
+        <NavItem icon={<User size={22} />} />
+        <NavItem icon={<Folder size={22} />} />
+        <NavItem icon={<Mail size={22} />} />
+      </div>
     </div>
-  );
-};
+  )
+}
 
-const NavItem = ({ icon, label }) => {
-  return (
-    <button className="flex flex-col items-center justify-center p-2 hover:text-blue-400 transition">
-      {icon}
-     
-    </button>
-  );
-};
+export default NavBar
 
-export default NavBar;

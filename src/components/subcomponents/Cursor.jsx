@@ -70,7 +70,7 @@ const Cursor = () => {
   return isVisible ? (
     <>
       <motion.div
-        className="fixed top-0 left-0 pointer-events-none z-50 hidden md:block"
+        className="fixed top-0 left-0 pointer-events-none  hidden md:block"
         animate={{
           x: cursorPos.x - 5,
           y: cursorPos.y - 5,
