@@ -10,8 +10,8 @@ const NavItem = ({ icon }) => {
 
 const NavBar = () => {
   return (
-    <div className="fixed inset-x-0 bottom-4 flex justify-center z-[9999] pointer-events-none">
-      <div className="flex items-center justify-around w-64 h-14 2xl:w-100 bg-gray-900/90 backdrop-blur-md text-white rounded-full shadow-lg border border-gray-700 pointer-events-auto">
+    <div className="fixed inset-x-0 bottom-4 flex justify-center z-[8888] pointer-events-none">
+      <div className="flex items-center justify-around w-64 h-14 2xl:h-16 bg-gray-900/90 backdrop-blur-md text-white rounded-full shadow-lg border border-gray-700 pointer-events-auto">
         <NavItem icon={<Home size={22} />} />
         <NavItem icon={<User size={22} />} />
         <NavItem icon={<Folder size={22} />} />
