@@ -1,5 +1,3 @@
-"use client";
-
 import { useEffect, useState } from "react";
 import { Github, Linkedin, ArrowRight, Youtube } from "lucide-react";
 
@@ -38,7 +36,9 @@ const ShowCase = () => {
             <div className="absolute inset-0 bg-black/50 rounded-xl"></div>
             <Github size={24} className="relative z-10" />
             <p className="relative z-10 text-sm">GitHub</p>
-            <p className="relative z-10 text-xs text-gray-300">My Codebases 🌌</p>
+            <p className="relative z-10 text-xs text-gray-300">
+              My Codebases 🌌
+            </p>
           </div>
         </a>
       </div>
@@ -65,10 +65,7 @@ const ShowCase = () => {
       </div>
 
       <div className="col-span-1 md:col-span-2 lg:col-span-2">
-        <a
-          href="/about"
-          className="block w-full h-full"
-        >
+        <a href="/about" className="block w-full h-full">
           <div className="bg-gray-700 hover:bg-gray-800 rounded-xl p-4 flex flex-col justify-center items-center transition-all md:h-[120px] lg:h-[140px]">
             <ArrowRight size={20} className="text-white" />
             <p className="text-white text-xs mt-1">About</p>

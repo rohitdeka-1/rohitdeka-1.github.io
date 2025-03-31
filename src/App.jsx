@@ -5,11 +5,13 @@ import TechStack from "./components/TechStack";
 import BlurEffect from "./components/subcomponents/BlurEffect";
 import NavBar from "./components/NavBar";
 import ShowCase from "./components/ShowCase";
+import Background from "./components/subcomponents/Background";
 
 function App() {
   return (
     <>
       <BlurEffect>
+        <Background/>
         <div className=" p-3 bg-black w-full text-justify flex flex-col items-center">
           <div className="w-full lg:max-w-5xl xl:max-w-6xl 2xl:max-w-3xl mx-auto px-4">
             <TopHeading />
