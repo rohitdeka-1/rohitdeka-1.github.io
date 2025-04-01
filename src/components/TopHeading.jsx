@@ -7,6 +7,17 @@ const TopHeading = ({target}) => {
     new Date().toLocaleTimeString()
   );
 
+  const [Voice, setVoice] = useState(false);
+
+  const audio = new Audio("/public/Assets/rohitdeka.mp3");
+
+  const handleVoice = () =>{
+    setVoice(!Voice);    
+    if(Voice){
+      audio.play();
+    }
+  }
+
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentTime(new Date().toLocaleTimeString());
@@ -21,7 +32,11 @@ const TopHeading = ({target}) => {
         <h1 className="mt-5 font-geist  font-bold text-3xl 2xl:text-4xl text-white">
           Hi, I'm Rohit ⚡
         </h1>
-        <p className="mt-5 text-gray-300">Developer</p>
+        <div className="flex mt-5 items-center gap-2 flex-row ">
+        <p className=" text-gray-300">Developer</p>
+        <button onClick={handleVoice}>🔊</button> 
+        </div>
+       
 
         <div className="mt-3 flex gap-1 flex-wrap">
           <ShowCard name="📍 Assam, Guwahati" />
