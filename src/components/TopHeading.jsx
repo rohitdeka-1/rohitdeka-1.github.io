@@ -12,7 +12,8 @@ const TopHeading = ({target}) => {
   const audio = new Audio("/public/Assets/rohitdeka.mp3");
 
   const handleVoice = () =>{
-    setVoice(!Voice);    
+    setVoice(!Voice);  
+    console.log(Voice);
     if(Voice){
       audio.play();
     }
