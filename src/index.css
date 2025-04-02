@@ -6,7 +6,3 @@
 @tailwind components;
 @tailwind utilities;
 
-::selection {
-    /* background: rgba(42, 188, 255, 0.822); */
-    background: #995dc4;
-}
