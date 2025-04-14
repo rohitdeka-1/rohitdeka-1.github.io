@@ -65,7 +65,7 @@ const ShowCase = () => {
       </div>
 
       <div className="col-span-1 md:col-span-2 lg:col-span-2">
-        <a href="/about" className="block w-full h-full">
+        <a href="/" className="block w-full h-full">
           <div className="bg-gray-700 hover:bg-gray-800 rounded-xl p-4 flex flex-col justify-center items-center transition-all md:h-[120px] lg:h-[140px]">
             <ArrowRight size={20} className="text-white" />
             <p className="text-white text-xs mt-1">About</p>
